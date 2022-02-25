@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ecom.Models
 {
-    public partial class Productpage
+    public partial class Productpage 
     {
         public int Id { get; set; }
         public int? ProductId { get; set; }

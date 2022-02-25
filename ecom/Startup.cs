@@ -1,4 +1,5 @@
 using ApiDbProductContext;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,9 +25,11 @@ namespace ecom
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
+
             services.AddDbContext<dev_apidbProductContext>();
             services.AddControllersWithViews();
-
+            services.AddControllers();
             services.AddCors(option =>
             {
                 option.AddDefaultPolicy(builder =>
@@ -34,6 +37,10 @@ namespace ecom
                     builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
                 });
             });
+
+            
+           
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
