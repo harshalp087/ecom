@@ -26,6 +26,7 @@ namespace ecom
         public void ConfigureServices(IServiceCollection services)
         {
            
+                        services.AddControllers().AddNewtonsoftJson();
 
             services.AddDbContext<dev_apidbProductContext>();
             services.AddControllersWithViews();
