@@ -12,7 +12,7 @@ namespace ecom.Controllers
 {
     //[Route("api/[controller]")]
     [ApiController]
-    //added by anand
+    //added by anandk
 
     public class ProductpagesController : ControllerBase
     {
